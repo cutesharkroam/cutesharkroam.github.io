@@ -1,7 +1,231 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1>萌鲨漫步</h1>
-        <p>I'm hosted with GitHub Pages.</p>
-    </body>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <style>
+      body {
+      	/*padding-top: 50px;*/
+      	/*padding-bottom: 20px;*/
+      	font-family: "手札体-简","ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif;
+      }
+
+      #introduction {
+      	color:#555;
+      }
+
+      .jumbotron,.footer,.navbar-inverse {
+      	/*background-color: #1fa67a;*/
+      	background-color: #2489c5;/*2489c5  04a5e5*/
+      	color:#FFF;
+      }
+
+      .navbar-inverse {
+      	border:none;
+      }
+      
+      .navbar-inverse .navbar-nav>li>a {
+      	color: #ccc;
+      }
+
+      .navbar-inverse .navbar-brand {
+      	color: #FFF;
+      }
+
+      .jumbotron,.footer {
+      	position: relative;
+      }
+
+      .jumbotron:after,.footer:after,.navbar-inverse:before {
+      	content: '';
+      	display: block;
+      	position: absolute;
+      	top:0;
+      	right: 0;
+      	bottom: 0;
+      	left: 0;
+      	opacity: .25;
+      	background-image: url(noise.png);
+      }
+
+      .caption {
+      	text-align: center;
+      }
+
+      .production-title {
+      	color:#428bca;
+      }
+
+      .footer {
+      	padding-top: 20px;
+      	padding-bottom: 20px;
+      	margin-top: 20px;
+      }
+
+      #comany_name {
+      	padding-bottom: 20px;
+      }
+
+      .thumbnail {
+      	height: 500px;
+      }
+
+      #page_jumbotron {
+      	padding-top: 100px;
+      }
+
+      #company_introduction {
+      	padding-top: 10px;
+      }
+
+      #company_production {
+      	padding-top: 50px;
+      }
+
+      #company_contact {
+      	padding-top: 50px;
+      }
+      </style>
+
+  </head>
+  <body>
+  	<div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+  		<div class="container">
+  			<div class="navbar-header">
+  				<a class="navbar-brand" href="http://www.cutesharkroam.com">萌鲨漫步</a>
+  			</div>
+
+  			<ul class="nav navbar-nav">
+  				<li><a href="#page_jumbotron">首页</a></li>
+  				<li><a href="#company_introduction">公司介绍</a></li>
+  				<li><a href="#company_production">业务介绍</a></li>
+  				<li><a href="#company_contact">联系方式</a></li>
+  			</ul>
+  		</div>
+  	</div>
+
+  	<div class="jumbotron" id="page_jumbotron">
+  		<div class="container">
+  			<h1 id="comany_name">北京萌鲨漫步科技有限公司</h1>
+			<p>用我们的智慧，解决您的问题！<br/>专注于智能卡领域和移动互联网领域</p>
+  		</div>
+  	</div>
+
+  	<div id="introduction">
+  		<div class="container"  id="company_introduction">
+  			<div class="page-header h1">公司介绍</div>
+  			<div class="row">
+  				<div class="col-sm-12 col-md-8">
+  					本公司成立于2014年，致力于为客户提供完整的基于智能卡的解决方案。同时，还从事移动互联网领域的产品研发。工程师团队具备多年的智能卡从业经验和移动互联网从业经验。以承接外包和自有产品运营作为主要业务。
+  				</div>
+  			</div>
+  		</div>
+
+  		<div class="container">
+  			<div class="page-header h1" id="company_production">业务介绍</div>
+
+  			<h2 class="production-line-name">智能卡COS</h2>
+  			<div class="row">
+  				<div class="col-sm-6 col-md-4">
+  					<div class="thumbnail">
+  						<img data-src="holder.js/300x200" src="smartcard.jpg" />
+  						<div class="caption">
+  							<h3 class="production-title">COS</h3>
+  							<p>电信卡、支付卡、电子钱包、QPBOC、Java Card</p>
+  						</div>
+  					</div>
+  				</div>
+
+  				<div class="col-sm-6 col-md-4">
+  					<div class="thumbnail">
+  						<img data-src="holder.js/300x200" src="smartcard.jpg"/>
+  						<div class="caption">
+  							<h3 class="production-title">USB Key COS</h3>
+  							<p>USB Key COS</p>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+
+  			<h2 class="production-line-name">智能卡工具</h2>
+  			<div class="row">
+  				<div class="col-sm-6 col-md-4">
+  					<div class="thumbnail">
+  						<img data-src="holder.js/300x200" src="smartcard.jpg"/>
+  						<div class="caption">
+  							<h3 class="production-title">StarRunner</h3>
+  							<p>脚本测试工具，python语言</p>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+
+  			<h2 class="production-line-name">智能卡系统</h2>
+  			<div class="row">
+  				<div class="col-sm-6 col-md-4">
+  					<div class="thumbnail">
+  						<img data-src="holder.js/300x200" src="smartcard.jpg"/>
+  						<div class="caption">
+  							<h3 class="production-title">一卡通管理系统</h3>
+  							<p>一卡通管理系统</p>
+  						</div>
+  					</div>
+  				</div>
+
+  				<div class="col-sm-6 col-md-4">
+  					<div class="thumbnail">
+  						<img data-src="holder.js/300x200" src="smartcard.jpg"/>
+  						<div class="caption">
+  							<h3 class="production-title">TSM</h3>
+  							<p>TSM</p>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+
+  			<h2 class="production-line-name">移动互联网</h2>
+  			<div class="row">
+  				<div class="col-sm-6 col-md-4">
+  					<div class="thumbnail">
+  						<img data-src="holder.js/300x200" src="smartcard.jpg"/>
+  						<div class="caption">
+  							<h3 class="production-title">移动互联网产品</h3>
+  							<p>周边商户</p>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+
+  		<div class="container" id="company_contact">
+  			<div class="page-header h1">联系方式</div>
+  			<div class="row">
+  				<div class="col-sm-6 col-md-4">Email:<a href=mailto:cutesharkroam@gmail.com>cutesharkroam@gmail.com</a></div>
+  				<div class="col-sm-6 col-md-4">QQ:19454794</div>
+  				<div class="col-sm-6 col-md-4">TEL:86-010-82936410</div>
+  			</div>
+  		</div>
+  	</div>
+
+  	<footer class="footer">
+  		<div class="container">
+  			&copy; 2014 北京萌鲨漫步科技有限公司
+  		</div>
+  	</footer>
+
+
+  <script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+  <script src="http://cdn.bootcss.com/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+</body>
 </html>
