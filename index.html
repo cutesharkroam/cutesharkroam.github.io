@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -13,6 +14,9 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
+
+     
+
       <style>
       body {
       	/*padding-top: 50px;*/
@@ -95,6 +99,11 @@
       #company_contact {
       	padding-top: 50px;
       }
+
+      .navbar-inverse .navbar-toggle {
+      	border-color: #FFF;
+      	color: #FFF;
+      }
       </style>
 
   </head>
@@ -102,15 +111,21 @@
   	<div class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
   		<div class="container">
   			<div class="navbar-header">
+  				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			        	<span class="sr-only">Toggle navigation</span>
+			        	<i class="fa fa-bars fa-lg"></i>
+			      	</button>	
   				<a class="navbar-brand" href="http://www.cutesharkroam.com">萌鲨漫步</a>
   			</div>
 
-  			<ul class="nav navbar-nav">
-  				<li><a href="#page_jumbotron">首页</a></li>
-  				<li><a href="#company_introduction">公司介绍</a></li>
-  				<li><a href="#company_production">业务介绍</a></li>
-  				<li><a href="#company_contact">联系方式</a></li>
-  			</ul>
+  			<div class="navbar-collapse collapse">
+	  			<ul class="nav navbar-nav">
+	  				<li><a href="#page_jumbotron">首页</a></li>
+	  				<li><a href="#company_introduction">公司介绍</a></li>
+	  				<li><a href="#company_production">业务介绍</a></li>
+	  				<li><a href="#company_contact">联系方式</a></li>
+	  			</ul>
+	  		</div>
   		</div>
   	</div>
 
