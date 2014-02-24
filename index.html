@@ -91,7 +91,19 @@
       }
 
       .thumbnail {
-      	height: 400px;
+       max-width: 310px;
+      }
+
+      #smart-card-system .thumbnail {
+        min-height: 500px;
+      }
+
+      #smart-card-cos .thumbnail {
+        min-height: 434px;
+      }
+
+      #mobile-internet .thumbnail {
+        min-height: 404px;
       }
 
       #page_jumbotron {
@@ -165,10 +177,10 @@
   			<div class="page-header h1" id="company_production">业务介绍</div>
 
   			<h2 class="production-line-name">智能卡系统</h2>
-  			<div class="row">
-  				<div class="col-sm-6 col-lg-4">
+  			<div class="row" id="smart-card-system">
+  				<div class="col-sm-6 col-md-4">
   					<div class="thumbnail">
-  						<img data-src="holder.js/300x200" src="tsm.png"/>
+  						<img data-src="holder.js/400x200" src="tsm.png"/>
   						<div class="caption">
   							<h3 class="production-title">TSM</h3>
   							<p class="production-description">可信服务管理平台（简称TSM），是在移动支付领域一卡多应用场景下，为发卡方和应用方之间可信通道和服务而建立的安全个人化、应用发行及SE管理的综合服务平台，是完整移动支付体系的核心。TSM系统具备如下特点：</p>
@@ -237,7 +249,7 @@
   			</div>
 
   			<h2 class="production-line-name">智能卡COS</h2>
-  			<div class="row">
+  			<div class="row" id="smart-card-cos">
   				<div class="col-sm-6 col-md-4">
   					<div class="thumbnail">
   						<img data-src="holder.js/300x200" src="ukey.png"/>
@@ -272,7 +284,7 @@
   			</div>
 
   			<h2 class="production-line-name">移动互联网</h2>
-  			<div class="row">
+  			<div class="row" id="mobile-internet">
   				<div class="col-sm-6 col-md-4">
   					<div class="thumbnail">
   						<img data-src="holder.js/300x200" src="smartarea.png"/>
